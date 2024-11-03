@@ -19,7 +19,7 @@ nav {
 #hero {
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
-    margin-top: -100px;
+
 }
 
 #hero-box {
@@ -39,7 +39,7 @@ nav {
 }
 
 /* Main Grid */
-main.home-grid {
+.home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
 }
