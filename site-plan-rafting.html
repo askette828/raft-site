@@ -3,100 +3,120 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Site Plan - Dry Oar Boating</title> <!-- Updated title -->
- <link rel="stylesheet" href="stlyles/site-plan-rafting.css">
-
+  <link rel="stylesheet" href="styles/site-plan-rafting.css"> <!-- Corrected path typo -->
 </head>
 
 <body>
   <header>
-    <h1>Lakers River Rafters Site Plan</h1>
-    <h2>Jake Smith</h2>
-    <h2>WDD 130</h2>
-    <!-- In the header above, add the name of your site, your name and class number. For example if you are in section 3 you would put WDD 130-03 -->
-  </header>
-  <main role="main"> <!-- Added role for accessibility -->
-    <hr />
-    <h2>Overview</h2>
-    <h3>Purpose</h3>
-    <p>Our purpose is to provide thrilling rafting experiences.</p>
-
-    <h3>Audience</h3>
-    <p>Beginners, seasoned campaigners, and anyone interested in water sports would love this experience.</p>
-
-    <hr />
-    <h2>Branding</h2>
-    <h3>Website Logo</h3>
-    <img src="./images/Picture1.jpg" alt="Logo of Dry Oar Boating" /> <!-- Improved alt text -->
-    <hr />
-    <h2>Style Guide</h2>
-
-    <h3>Color Palette</h3>
-    
-    <table class="colors">
-      <tr>
-        <th>Primary</th>
-        <th>Secondary</th>
-        <th>Accent 1</th>
-        <th>Accent 2</th>
-      </tr>
-      
-      <tr>
-        <td class="primary"></td>
-        <td class="secondary"></td>
-        <td class="accent1"></td>
-        <td class="accent2"></td>
-      </tr>
-    </table>
-
-    <h3>Typography</h3>
-
-    <h4>Heading Font: "Fira Sans", sans-serif</h4>
-    <h4>Paragraph Font: "Fira Sans", sans-serif</h4>
-    
-    <h3>Normal paragraph example</h3>
-    <p>
-      The best Whitewater Rafting in Colorado, White Water Rafting Company
-      offers rafting on the Colorado and Roaring Fork Rivers in Glenwood
-      Springs. Since 1974, we have been family owned and operated, rafting the
-      Shoshone section of Glenwood Canyon and beyond.
-    </p>
-    <h3>Colored paragraph example</h3>
-    <p class="colored">
-      Trips vary from mild and great for families, to trips exclusively for
-      physically fit and experienced rafters. No matter what type of river
-      adventures you are seeking, White Water Rafting Company can make it
-      happen for you.
-    </p>
-
-    <h3>Navigation with Hover</h3>
+    <a id="logo_link" href="index.html">
+      <img class="logo" src="images/logo.png" alt="Dry Oar Logo"> <!-- Site logo with link to home -->
+    </a>
     <nav>
       <a href="index.html" aria-label="Go to Home">Home</a>
       <a href="page2.html" aria-label="Navigate to Page 2">Page 2</a>
+      <a href="site-plan-rafting.html" aria-label="View Site Plan">Site Plan</a>
       <a href="contactus.html" aria-label="Contact Us">Contact Us</a>
     </nav>
-    <hr />
-    <h2>Site Map</h2>
-    <div class="sitemap">
-      <div class="sm-home">Home</div>
-      <div class="sm-page2">[Page 2]</div>
-      <div class="sm-page3">Contact Us</div>
-      <div class="top">&nbsp;</div>
-      <div class="left">&nbsp;</div>
-      <div class="right">&nbsp;</div>
-    </div>
-    <hr />
-    <h2>Wireframes</h2>
+  </header>
 
-    <h3>Home</h3>
-    <img src="https://byui-wdd.github.io/wdd130/images/Home.jpg" alt="Wireframe for Home Page" />
-    
-    <h3>Contact Us</h3>
-    <img src="https://byui-wdd.github.io/wdd130/images/Contact.jpg" alt="Wireframe for Contact Us Page" />
+  <main role="main"> <!-- Added role for accessibility -->
+    <section id="overview">
+      <hr />
+      <h2>Overview</h2>
+      <h3>Purpose</h3>
+      <p>Our purpose is to provide thrilling rafting experiences.</p>
+
+      <h3>Audience</h3>
+      <p>Beginners, seasoned rafters, and anyone interested in water sports would love this experience.</p>
+    </section>
+
+    <section id="branding">
+      <hr />
+      <h2>Branding</h2>
+      <h3>Website Logo</h3>
+      <img src="./images/Picture1.jpg" alt="Logo of Dry Oar Boating" /> <!-- Improved alt text -->
+
+      <h3>Color Palette</h3>
+      <table class="colors">
+        <tr>
+          <th>Primary</th>
+          <th>Secondary</th>
+          <th>Accent 1</th>
+          <th>Accent 2</th>
+        </tr>
+        <tr>
+          <td class="primary"></td>
+          <td class="secondary"></td>
+          <td class="accent1"></td>
+          <td class="accent2"></td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="typography">
+      <hr />
+      <h2>Style Guide</h2>
+      <h3>Typography</h3>
+      <h4>Heading Font: "Fira Sans", sans-serif</h4>
+      <h4>Paragraph Font: "Fira Sans", sans-serif</h4>
+      
+      <h3>Normal paragraph example</h3>
+      <p>
+        The best Whitewater Rafting in Colorado, White Water Rafting Company
+        offers rafting on the Colorado and Roaring Fork Rivers in Glenwood
+        Springs. Since 1974, we have been family owned and operated, rafting the
+        Shoshone section of Glenwood Canyon and beyond.
+      </p>
+
+      <h3>Colored paragraph example</h3>
+      <p class="colored">
+        Trips vary from mild and great for families, to trips exclusively for
+        experienced rafters. No matter what type of river adventures you are seeking, White Water Rafting Company can make it
+        happen for you.
+      </p>
+    </section>
+
+    <section id="navigation-example">
+      <hr />
+      <h3>Navigation with Hover</h3>
+      <nav>
+        <a href="index.html" aria-label="Go to Home">Home</a>
+        <a href="page2.html" aria-label="Navigate to Page 2">Page 2</a>
+        <a href="contactus.html" aria-label="Contact Us">Contact Us</a>
+      </nav>
+    </section>
+
+    <section id="sitemap">
+      <hr />
+      <h2>Site Map</h2>
+      <div class="sitemap">
+        <div class="sm-home">Home</div>
+        <div class="sm-page2">[Page 2]</div>
+        <div class="sm-page3">Contact Us</div>
+        <div class="top">&nbsp;</div>
+        <div class="left">&nbsp;</div>
+        <div class="right">&nbsp;</div>
+      </div>
+    </section>
+
+    <section id="wireframes">
+      <hr />
+      <h2>Wireframes</h2>
+      <h3>Home</h3>
+      <img src="https://byui-wdd.github.io/wdd130/images/Home.jpg" alt="Wireframe for Home Page" />
+      
+      <h3>Contact Us</h3>
+      <img src="https://byui-wdd.github.io/wdd130/images/Contact.jpg" alt="Wireframe for Contact Us Page" />
+    </section>
   </main>
+
   <footer>
     <p>&copy; 2024 Dry Oar Boating - Jake Smith</p>
   </footer>
 </body>
+
+</html>
 
 </html>
