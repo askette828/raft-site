@@ -1,0 +1,173 @@
+/* Importing Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+	/* Updated color values from your palette */
+	--primary-color: #396e94;
+	--secondary-color: #bee9e8;
+	--accent1-color: #ffd60a;
+	--accent2-color: #d21c1c;
+
+	/* Font definitions */
+	--heading-font: "Fira Sans", sans-serif;
+	--paragraph-font: "Fira Sans", sans-serif;
+
+	/* Text and background colors */
+	--headline-color-on-white: #396e94; 
+	--headline-color-on-color: #d21c1c; 
+	--paragraph-color-on-white: #396e94; 
+	--paragraph-color-on-color: #ffd60a; 
+	--paragraph-background-color: white;
+	--nav-link-color: #396e94;
+	--nav-background-color: #bee9e8;
+	--nav-hover-link-color: white;
+	--nav-hover-background-color: #5fa8d3;
+}
+
+/* Global Styles */
+body {
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 4em;
+	font-size: 18px;
+	text-align: center;
+	font-family: var(--paragraph-font); /* Apply paragraph font globally */
+}
+img {
+	display: block;
+	margin: 0 auto;
+	max-width: 300px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading-font);
+	color: var(--headline-color-on-white);
+}
+h2 {
+	text-align: center;
+}
+hr {
+	height: 3px;
+	margin: 35px 0;
+	background: var(--accent1-color);
+}
+
+/* Header Styles */
+header {
+	padding: 1em;
+	text-align: center;
+	color: var(--headline-color-on-color);
+	background-color: var(--paragraph-background-color);
+}
+header > h1,
+header > h2 {
+	color: var(--headline-color-on-color);
+}
+
+/* Paragraph Styles */
+p {
+	color: var(--paragraph-color-on-white);
+	padding: 1em;
+}
+.colors {
+	width: 100%;
+	min-width: 350px;
+	margin: 30px auto;
+	text-align: center;
+}
+.colors th {
+	background-color: #999;
+}
+.colors td {
+	width: 25%;
+	height: 3em;
+}
+
+/* Color Styles for Table */
+.primary {
+	background-color: var(--primary-color);
+}
+.secondary {
+	background-color: var(--secondary-color);
+}
+.accent1 {
+	background-color: var(--accent1-color);
+}
+.accent2 {
+	background-color: var(--accent2-color);
+}
+
+/* Colored Paragraph */
+p.colored {
+	background-color: var(--paragraph-background-color);
+	color: var(--paragraph-color-on-color);
+}
+
+/* Navigation Styles */
+nav {
+	background-color: var(--nav-background-color);
+	line-height: 3em;
+	text-align: center;
+	font-size: 1.2em;
+	list-style-type: none;
+	display: flex;
+}
+nav a {
+	padding: 10px;
+	min-width: 120px;
+	text-decoration: none;
+	color: var(--nav-link-color);
+}
+nav a:link,
+nav a:visited {
+	color: var(--nav-link-color);
+}
+nav a:hover {
+	color: var(--nav-hover-link-color);
+	background-color: var(--nav-hover-background-color);
+}
+
+/* Sitemap Styles */
+.sitemap {
+	display: grid;
+	justify-content: center;
+	grid-template-columns: repeat(6, 15%);
+	grid-template-rows: 3em 1.5em 1.5em 3em;
+	grid-template-areas:
+		". . home home . ."
+		". . . top . ."
+		". left left right right ."
+		"page2 page2 . . page3 page3";
+}
+.sitemap > div {
+	text-align: center;
+	background-color: #ccc; /* Unified background color for sitemap */
+	line-height: 3em;
+}
+.sm-home {
+	grid-area: home;
+}
+.sm-page2 {
+	grid-area: page2;
+}
+.sm-page3 {
+	grid-area: page3;
+}
+.top {
+	grid-area: top;
+	border-left: 1px solid;
+}
+.left {
+	grid-area: left;
+	border-top: 1px solid;
+	border-left: 1px solid;
+}
+.right {
+	grid-area: right;
+	border-top: 1px solid;
+	border-right: 1px solid;
+}
